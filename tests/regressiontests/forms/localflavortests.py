@@ -30,4 +30,4 @@ from localflavor.uk import UKLocalFlavorTests
 from localflavor.us import USLocalFlavorTests
 from localflavor.uy import UYLocalFlavorTests
 from localflavor.za import ZALocalFlavorTests
-
+from localflavor.mk import MKLocalFlavorTests

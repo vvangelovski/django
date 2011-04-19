@@ -22,5 +22,5 @@ from regressiontests.forms.localflavortests import (
     NLLocalFlavorTests, PLLocalFlavorTests, PTLocalFlavorTests,
     ROLocalFlavorTests, SELocalFlavorTests, SKLocalFlavorTests,
     TRLocalFlavorTests, UKLocalFlavorTests, USLocalFlavorTests,
-    UYLocalFlavorTests, ZALocalFlavorTests
-)
+    UYLocalFlavorTests, ZALocalFlavorTests, MKLocalFlavorTests,
+    )
