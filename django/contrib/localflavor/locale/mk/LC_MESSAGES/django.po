@@ -4,14 +4,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Django\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-03-15 13:19-0400\n"
+"POT-Creation-Date: 2011-04-19 16:50+0200\n"
 "PO-Revision-Date: 2011-03-04 18:43+0000\n"
 "Last-Translator: vvangelovski <vvangelovski@gmail.com>\n"
 "Language-Team: Macedonian <>\n"
+"Language: mk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: mk\n"
 "Plural-Forms: nplurals=2; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : 1\n"
 
 #: ar/forms.py:28
@@ -1421,6 +1421,373 @@ msgstr "Окинава"
 #: kw/forms.py:25
 msgid "Enter a valid Kuwaiti Civil ID number"
 msgstr "Внесете правилен кувајтски број за идентификација"
+
+#: mk/forms.py:38
+msgid "This field should contain exactly 13 digits."
+msgstr "Ова поле треба да содржи точно 13 цифри."
+
+#: mk/forms.py:39
+msgid "The first 7 digits of the UMCN must represent a valid past date."
+msgstr "Првите 7 цифри од матичниот број мора да претставуваат валиден датум во минато."
+
+#: mk/forms.py:40
+msgid "The UMCN is not valid."
+msgstr "Матичниот број не е валиден."
+
+#: mk/forms.py:93
+msgid ""
+"Identity card numbers must contain either 4 to 7 digits or an uppercase "
+"letter and 7 digits."
+msgstr "Бројот на лична карта мора да содржи или 4 до 7 цифри или една голема "
+"буква и 7 цифри."
+
+#: mk/mk_municipalities.py:8
+msgid "Aerodrom"
+msgstr "Аеродром"
+
+#: mk/mk_municipalities.py:9
+msgid "Aračinovo"
+msgstr "Арачиново"
+
+#: mk/mk_municipalities.py:10
+msgid "Berovo"
+msgstr "Берово"
+
+#: mk/mk_municipalities.py:11
+msgid "Bitola"
+msgstr "Битола"
+
+#: mk/mk_municipalities.py:12
+msgid "Bogdanci"
+msgstr "Богданци"
+
+#: mk/mk_municipalities.py:13
+msgid "Bogovinje"
+msgstr "Боговиње"
+
+#: mk/mk_municipalities.py:14
+msgid "Bosilovo"
+msgstr "Босилово"
+
+#: mk/mk_municipalities.py:15
+msgid "Brvenica"
+msgstr "Брвеница"
+
+#: mk/mk_municipalities.py:16
+msgid "Butel"
+msgstr "Бутел"
+
+#: mk/mk_municipalities.py:17
+msgid "Valandovo"
+msgstr "Валандово"
+
+#: mk/mk_municipalities.py:18
+msgid "Vasilevo"
+msgstr "Василево"
+
+#: mk/mk_municipalities.py:19
+msgid "Vevčani"
+msgstr "Вевчани"
+
+#: mk/mk_municipalities.py:20
+msgid "Veles"
+msgstr "Велес"
+
+#: mk/mk_municipalities.py:21
+msgid "Vinica"
+msgstr "Виница"
+
+#: mk/mk_municipalities.py:22
+msgid "Vraneštica"
+msgstr "Вранештица"
+
+#: mk/mk_municipalities.py:23
+msgid "Vrapčište"
+msgstr "Врапчиште"
+
+#: mk/mk_municipalities.py:24
+msgid "Gazi Baba"
+msgstr "Гази Баба"
+
+#: mk/mk_municipalities.py:25
+msgid "Gevgelija"
+msgstr "Гевгелија"
+
+#: mk/mk_municipalities.py:26
+msgid "Gostivar"
+msgstr "Гостивар"
+
+#: mk/mk_municipalities.py:27
+msgid "Gradsko"
+msgstr "Градско"
+
+#: mk/mk_municipalities.py:28
+msgid "Debar"
+msgstr "Дебар"
+
+#: mk/mk_municipalities.py:29
+msgid "Debarca"
+msgstr "Дебарца"
+
+#: mk/mk_municipalities.py:30
+msgid "Delčevo"
+msgstr "Делчево"
+
+#: mk/mk_municipalities.py:31
+msgid "Demir Kapija"
+msgstr "Демир Капија"
+
+#: mk/mk_municipalities.py:32
+msgid "Demir Hisar"
+msgstr "Демир Хисар"
+
+#: mk/mk_municipalities.py:33
+msgid "Dolneni"
+msgstr "Долнени"
+
+#: mk/mk_municipalities.py:34
+msgid "Drugovo"
+msgstr "Другово"
+
+#: mk/mk_municipalities.py:35
+msgid "Gjorče Petrov"
+msgstr "Ѓорче Петров"
+
+#: mk/mk_municipalities.py:36
+msgid "Želino"
+msgstr "Желино"
+
+#: mk/mk_municipalities.py:37
+msgid "Zajas"
+msgstr "Зајас"
+
+#: mk/mk_municipalities.py:38
+msgid "Zelenikovo"
+msgstr "Зелениково"
+
+#: mk/mk_municipalities.py:39
+msgid "Zrnovci"
+msgstr "Зрновци"
+
+#: mk/mk_municipalities.py:40
+msgid "Ilinden"
+msgstr "Илинден"
+
+#: mk/mk_municipalities.py:41
+msgid "Jegunovce"
+msgstr "Јегуновце"
+
+#: mk/mk_municipalities.py:42
+msgid "Kavadarci"
+msgstr "Кавадарци"
+
+#: mk/mk_municipalities.py:43
+msgid "Karbinci"
+msgstr "Карбинци"
+
+#: mk/mk_municipalities.py:44
+msgid "Karpoš"
+msgstr "Карпош"
+
+#: mk/mk_municipalities.py:45
+msgid "Kisela Voda"
+msgstr "Кисела Вода"
+
+#: mk/mk_municipalities.py:46
+msgid "Kičevo"
+msgstr "Кичево"
+
+#: mk/mk_municipalities.py:47
+msgid "Konče"
+msgstr "Конче"
+
+#: mk/mk_municipalities.py:48
+msgid "Koćani"
+msgstr "Кочани"
+
+#: mk/mk_municipalities.py:49
+msgid "Kratovo"
+msgstr "Кратово"
+
+#: mk/mk_municipalities.py:50
+msgid "Kriva Palanka"
+msgstr "Крива Паланка"
+
+#: mk/mk_municipalities.py:51
+msgid "Krivogaštani"
+msgstr "Кривогаштани"
+
+#: mk/mk_municipalities.py:52
+msgid "Kruševo"
+msgstr "Крушево"
+
+#: mk/mk_municipalities.py:53
+msgid "Kumanovo"
+msgstr "Куманово"
+
+#: mk/mk_municipalities.py:54
+msgid "Lipkovo"
+msgstr "Липково"
+
+#: mk/mk_municipalities.py:55
+msgid "Lozovo"
+msgstr "Лозово"
+
+#: mk/mk_municipalities.py:56
+msgid "Mavrovo i Rostuša"
+msgstr "Маврово и Ростуша"
+
+#: mk/mk_municipalities.py:57
+msgid "Makedonska Kamenica"
+msgstr "Македонска Каменица"
+
+#: mk/mk_municipalities.py:58
+msgid "Makedonski Brod"
+msgstr "Македонски Брод"
+
+#: mk/mk_municipalities.py:59
+msgid "Mogila"
+msgstr "Могила"
+
+#: mk/mk_municipalities.py:60
+msgid "Negotino"
+msgstr "Неготино"
+
+#: mk/mk_municipalities.py:61
+msgid "Novaci"
+msgstr "Новаци"
+
+#: mk/mk_municipalities.py:62
+msgid "Novo Selo"
+msgstr "Ново Село"
+
+#: mk/mk_municipalities.py:63
+msgid "Oslomej"
+msgstr "Осломеј"
+
+#: mk/mk_municipalities.py:64
+msgid "Ohrid"
+msgstr "Охрид"
+
+#: mk/mk_municipalities.py:65
+msgid "Petrovec"
+msgstr "Петровец"
+
+#: mk/mk_municipalities.py:66
+msgid "Pehčevo"
+msgstr "Пехчево"
+
+#: mk/mk_municipalities.py:67
+msgid "Plasnica"
+msgstr "Пласница"
+
+#: mk/mk_municipalities.py:68
+msgid "Prilep"
+msgstr "Прилеп"
+
+#: mk/mk_municipalities.py:69
+msgid "Probištip"
+msgstr "Пробиштип"
+
+#: mk/mk_municipalities.py:70
+msgid "Radoviš"
+msgstr "Радовиш"
+
+#: mk/mk_municipalities.py:71
+msgid "Rankovce"
+msgstr "Ранковце"
+
+#: mk/mk_municipalities.py:72
+msgid "Resen"
+msgstr "Ресен"
+
+#: mk/mk_municipalities.py:73
+msgid "Rosoman"
+msgstr "Росоман"
+
+#: mk/mk_municipalities.py:74
+msgid "Saraj"
+msgstr "Сарај"
+
+#: mk/mk_municipalities.py:75
+msgid "Sveti Nikole"
+msgstr "Свети Николе"
+
+#: mk/mk_municipalities.py:76
+msgid "Sopište"
+msgstr "Сопиште"
+
+#: mk/mk_municipalities.py:77
+msgid "Star Dojran"
+msgstr "Стар Дојран"
+
+#: mk/mk_municipalities.py:78
+msgid "Staro Nagoričane"
+msgstr "Старо Нагоричане"
+
+#: mk/mk_municipalities.py:79
+msgid "Struga"
+msgstr "Струга"
+
+#: mk/mk_municipalities.py:80
+msgid "Strumica"
+msgstr "Струмица"
+
+#: mk/mk_municipalities.py:81
+msgid "Studeničani"
+msgstr "Студеничани"
+
+#: mk/mk_municipalities.py:82
+msgid "Tearce"
+msgstr "Теарце"
+
+#: mk/mk_municipalities.py:83
+msgid "Tetovo"
+msgstr "Тетово"
+
+#: mk/mk_municipalities.py:84
+msgid "Centar"
+msgstr "Центар"
+
+#: mk/mk_municipalities.py:85
+msgid "Centar-Župa"
+msgstr "Центар-Жупа"
+
+#: mk/mk_municipalities.py:86
+msgid "Čair"
+msgstr "Чаир"
+
+#: mk/mk_municipalities.py:87
+msgid "Čaška"
+msgstr "Чашка"
+
+#: mk/mk_municipalities.py:88
+msgid "Češinovo-Obleševo"
+msgstr "Чешиново-Облешево"
+
+#: mk/mk_municipalities.py:89
+msgid "Čučer-Sandevo"
+msgstr "Чучер-Сандeвo"
+
+#: mk/mk_municipalities.py:90
+msgid "Štip"
+msgstr "Штип"
+
+#: mk/mk_municipalities.py:91
+msgid "Šuto Orizari"
+msgstr "Шуто Оризари"
+
+#: mk/models.py:8
+msgid "A Macedonian municipality (5 character HASC)"
+msgstr "Македонска општина (HASC од 5 карактери)"
+
+#: mk/models.py:17
+msgid "Unique master citizen number (13 digits)"
+msgstr "Единствен матичен број на граѓанинот (13 цифри)"
+
+#: mk/models.py:31
+msgid "Macedonian identity card number"
+msgstr "Број на македонска лична карта"
 
 #: mx/mx_states.py:12
 msgid "Aguascalientes"
