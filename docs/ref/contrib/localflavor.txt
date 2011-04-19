@@ -55,6 +55,7 @@ Countries currently supported by :mod:`~django.contrib.localflavor` are:
     * Italy_
     * Japan_
     * Kuwait_
+    * Macedonia_
     * Mexico_
     * `The Netherlands`_
     * Norway_
@@ -105,6 +106,7 @@ Here's an example of how to use them::
 .. _Italy: `Italy (it)`_
 .. _Japan: `Japan (jp)`_
 .. _Kuwait: `Kuwait (kw)`_
+.. _Macedonia: `Macedonia (mk)`_
 .. _Mexico: `Mexico (mx)`_
 .. _Norway: `Norway (no)`_
 .. _Peru: `Peru (pe)`_
@@ -573,6 +575,50 @@ Kuwait (``kw``)
     * The number consist of 12 digits.
     * The birthdate of the person is a valid date.
     * The calculated checksum equals to the last digit of the Civil ID.
+
+
+Macedonia (``mk``)
+===================
+
+.. class:: mk.forms.MKMunicipalitySelect
+
+    A form ``Select`` widget that uses a list of Macedonian municipalities as 
+    choices.
+
+.. class:: mk.forms.UMCNField
+
+    A form field that validates input as a unique master citizen
+    number.
+
+    The format of the unique master citizen number is not unique
+    to Macedonia. For more information see:  
+    https://secure.wikimedia.org/wikipedia/en/wiki/Unique_Master_Citizen_Number 
+
+    A value will pass validation if it complies to the following rules:
+
+    * Consists of exactly 13 digits
+    * The first 7 digits represent a valid past date in the format DDMMYYY
+    * The last digit of the UMCN passes a checksum test
+
+.. class:: mk.forms.MKIdentityCardNumberField
+    
+    A form field that validates input as a Macedonian identity card number.
+    Both old and new identity card numbers are supported.
+
+.. class:: mk.models.MKMunicipalityField
+
+   A model field that forms represent as a
+   ``forms.MKMunicipalitySelect`` and stores the 5 character HASC of the
+   municipality in the database.
+
+.. class:: mk.models.UMCNField
+
+   A model field that forms represent as a ``forms.UMCNField`` field.
+
+.. class:: mk.models.MKIdentityCardNumberField
+
+   A model field that forms represent as a
+   ``forms.MKIdentityCardNumberField`` field.
 
 Mexico (``mx``)
 ===============
