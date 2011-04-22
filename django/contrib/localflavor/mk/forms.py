@@ -6,6 +6,24 @@ from django.forms.fields import RegexField, Select, CharField, Field, RegexField
 from django.core.validators import EMPTY_VALUES
 from django.utils.translation import ugettext_lazy as _
 
+class MKIdentityCardNumberField(RegexField):
+    """
+    A Macedonian ID card number. Accepts both old and new format. 
+    """
+    
+    default_error_messages = {
+        'invalid': _(u'Identity card numbers must contain'\
+                         ' either 4 to 7 digits or an uppercase letter and 7 digits.'),
+    }
+    
+    def __init__(self, *args, **kwargs):
+        kwargs['min_length'] = None
+        kwargs['max_length'] = 8
+        regex = ur'(^[A-Z]{1}\d{7}$)|(^\d{4,7}$)'
+        super(MKIdentityCardNumberField, self).__init__(regex, *args, **kwargs)
+        
+   
+
 class MKMunicipalitySelect(Select):
     """
     A form ``Select`` widget that uses a list of Macedonian municipalities as 
@@ -16,6 +34,7 @@ class MKMunicipalitySelect(Select):
     def __init__(self, attrs=None):
         super(MKMunicipalitySelect, self).__init__(attrs, choices = MK_MUNICIPALITIES)
 
+        
 
 class UMCNField(RegexField):
     """
@@ -84,20 +103,3 @@ class UMCNField(RegexField):
             return False
         return True
 
-class MKIdentityCardNumberField(RegexField):
-    """
-    A Macedonian ID card number. Accepts both old and new format. 
-    """
-    
-    default_error_messages = {
-        'invalid': _(u'Identity card numbers must contain'\
-                         ' either 4 to 7 digits or an uppercase letter and 7 digits.'),
-    }
-    
-    def __init__(self, *args, **kwargs):
-        kwargs['min_length'] = None
-        kwargs['max_length'] = 8
-        regex = ur'(^[A-Z]{1}\d{7}$)|(^\d{4,7}$)'
-        super(MKIdentityCardNumberField, self).__init__(regex, *args, **kwargs)
-        
-   

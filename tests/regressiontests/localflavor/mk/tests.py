@@ -10,6 +10,7 @@ class MKLocalflavorTests(TestCase):
                                   'municipality_req':'MK.VE',
                                   'id_number':'A1234567'})
 
+        
     def test_get_display_methods(self):
         """Test that the get_*_display() methods are added to the model instances."""
 
@@ -17,6 +18,7 @@ class MKLocalflavorTests(TestCase):
         self.assertEqual(person.get_municipality_display(), 'Ohrid')
         self.assertEqual(person.get_municipality_req_display(), 'Veles')
 
+        
     def test_municipality_required(self):
         """Test that required MKMunicipalityFields throw appropriate errors."""
 
@@ -28,7 +30,8 @@ class MKLocalflavorTests(TestCase):
         
         self.assertFalse(form.is_valid())
         self.assertEqual(form.errors['municipality_req'], [u'This field is required.'])
-    
+
+        
     def test_umcn_invalid(self):
         """Test that UMCNFields throw appropriate errors for invalid UMCNs"""
 
@@ -52,6 +55,7 @@ class MKLocalflavorTests(TestCase):
         self.assertEqual(form.errors['umcn'],\
                 [u'The first 7 digits of the UMCN must represent a valid past date.']) 
 
+        
     def test_idnumber_invalid(self):
         """Test that MKIdentityCardNumberFields throw appropriate errors for invalid values"""
 
@@ -69,9 +73,6 @@ class MKLocalflavorTests(TestCase):
         
     
         
-
-        
-
     def test_field_blank_option(self):
         """Test that the empty option is there."""
 
