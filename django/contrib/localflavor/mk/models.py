@@ -1,6 +1,6 @@
 from django.db.models.fields import CharField
 from django.utils.translation import ugettext_lazy as _
-from django.contrib.localflavor.mk.mk_municipalities import MUNICIPALITY_CHOICES
+from django.contrib.localflavor.mk.mk_choices import MK_MUNICIPALITIES
 
 
 class MKMunicipalityField(CharField):
@@ -8,7 +8,7 @@ class MKMunicipalityField(CharField):
     description = _("A Macedonian municipality (5 character HASC)")
 
     def __init__(self, *args, **kwargs):
-        kwargs['choices'] = MUNICIPALITY_CHOICES
+        kwargs['choices'] = MK_MUNICIPALITIES
         kwargs['max_length'] = 5 
         super(MKMunicipalityField, self).__init__(*args, **kwargs)
 

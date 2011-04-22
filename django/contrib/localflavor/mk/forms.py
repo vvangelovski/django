@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import datetime
-from mk_municipalities import MUNICIPALITY_CHOICES
+from mk_choices import MK_MUNICIPALITIES
 from django.forms import ValidationError
 from django.forms.fields import RegexField, Select, CharField, Field, RegexField
 from django.core.validators import EMPTY_VALUES
@@ -14,7 +14,7 @@ class MKMunicipalitySelect(Select):
     """
     
     def __init__(self, attrs=None):
-        super(MKMunicipalitySelect, self).__init__(attrs, choices = MUNICIPALITY_CHOICES)
+        super(MKMunicipalitySelect, self).__init__(attrs, choices = MK_MUNICIPALITIES)
 
 
 class UMCNField(RegexField):
