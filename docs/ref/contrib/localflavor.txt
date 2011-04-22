@@ -700,10 +700,17 @@ Kuwait (``kw``)
 Macedonia (``mk``)
 ===================
 
+.. class:: mk.forms.MKIdentityCardNumberField
+    
+    A form field that validates input as a Macedonian identity card number.
+    Both old and new identity card numbers are supported.
+
+
 .. class:: mk.forms.MKMunicipalitySelect
 
     A form ``Select`` widget that uses a list of Macedonian municipalities as 
     choices.
+
 
 .. class:: mk.forms.UMCNField
 
@@ -720,10 +727,12 @@ Macedonia (``mk``)
     * The first 7 digits represent a valid past date in the format DDMMYYY
     * The last digit of the UMCN passes a checksum test
 
-.. class:: mk.forms.MKIdentityCardNumberField
-    
-    A form field that validates input as a Macedonian identity card number.
-    Both old and new identity card numbers are supported.
+
+.. class:: mk.models.MKIdentityCardNumberField
+
+   A model field that forms represent as a
+   ``forms.MKIdentityCardNumberField`` field.
+
 
 .. class:: mk.models.MKMunicipalityField
 
@@ -731,14 +740,11 @@ Macedonia (``mk``)
    ``forms.MKMunicipalitySelect`` and stores the 5 character HASC of the
    municipality in the database.
 
+
 .. class:: mk.models.UMCNField
 
    A model field that forms represent as a ``forms.UMCNField`` field.
 
-.. class:: mk.models.MKIdentityCardNumberField
-
-   A model field that forms represent as a
-   ``forms.MKIdentityCardNumberField`` field.
 
 Mexico (``mx``)
 ===============
