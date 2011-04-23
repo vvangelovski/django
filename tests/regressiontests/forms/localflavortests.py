@@ -21,6 +21,7 @@ from localflavor.is_ import ISLocalFlavorTests
 from localflavor.it import ITLocalFlavorTests
 from localflavor.jp import JPLocalFlavorTests
 from localflavor.kw import KWLocalFlavorTests
+from localflavor.mk import MKLocalFlavorTests
 from localflavor.nl import NLLocalFlavorTests
 from localflavor.pl import PLLocalFlavorTests
 from localflavor.pt import PTLocalFlavorTests
@@ -33,4 +34,4 @@ from localflavor.uk import UKLocalFlavorTests
 from localflavor.us import USLocalFlavorTests
 from localflavor.uy import UYLocalFlavorTests
 from localflavor.za import ZALocalFlavorTests
-from localflavor.mk import MKLocalFlavorTests
+
