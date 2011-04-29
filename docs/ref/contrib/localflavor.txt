@@ -737,7 +737,7 @@ Macedonia (``mk``)
 .. class:: mk.models.MKMunicipalityField
 
    A model field that forms represent as a
-   ``forms.MKMunicipalitySelect`` and stores the 5 character HASC of the
+   ``forms.MKMunicipalitySelect`` and stores the 2 character code of the
    municipality in the database.
 
 

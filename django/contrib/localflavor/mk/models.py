@@ -3,14 +3,30 @@ from django.utils.translation import ugettext_lazy as _
 from django.contrib.localflavor.mk.mk_choices import MK_MUNICIPALITIES
 
 
+class MKIdentityCardNumberField(CharField):
+
+    description = _("Macedonian identity card number")
+
+    def __init__(self, *args, **kwargs):
+        kwargs['max_length'] = 8
+        super(MKIdentityCardNumberField, self).__init__(*args, **kwargs)
+
+    def formfield(self, **kwargs):
+        from django.contrib.localflavor.mk.forms import MKIdentityCardNumberField as FormField
+        defaults = {'form_class' : FormField}
+        defaults.update(kwargs)
+        return super(MKIdentityCardNumberField, self).formfield(**defaults)
+
+
 class MKMunicipalityField(CharField):
 
-    description = _("A Macedonian municipality (5 character HASC)")
+    description = _("A Macedonian municipality (2 character code)")
 
     def __init__(self, *args, **kwargs):
         kwargs['choices'] = MK_MUNICIPALITIES
-        kwargs['max_length'] = 5 
+        kwargs['max_length'] = 2
         super(MKMunicipalityField, self).__init__(*args, **kwargs)
+
 
 class UMCNField(CharField):
 
@@ -25,17 +41,3 @@ class UMCNField(CharField):
         defaults = {'form_class' : FormField}
         defaults.update(kwargs)
         return super(UMCNField, self).formfield(**defaults)
-
-class MKIdentityCardNumberField(CharField):
-
-    description = _("Macedonian identity card number")
-
-    def __init__(self, *args, **kwargs):
-        kwargs['max_length'] = 8
-        super(MKIdentityCardNumberField, self).__init__(*args, **kwargs)
-
-    def formfield(self, **kwargs):
-        from django.contrib.localflavor.mk.forms import MKIdentityCardNumberField as FormField
-        defaults = {'form_class' : FormField}
-        defaults.update(kwargs)
-        return super(MKIdentityCardNumberField, self).formfield(**defaults)

@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 import datetime
 from mk_choices import MK_MUNICIPALITIES
 from django.forms import ValidationError
@@ -28,7 +27,7 @@ class MKMunicipalitySelect(Select):
     """
     A form ``Select`` widget that uses a list of Macedonian municipalities as 
     choices. The label is the name of the municipality and the value
-    is a 5 character HASC for the municipality.
+    is a 2 character code for the municipality.
     """
     
     def __init__(self, attrs=None):
